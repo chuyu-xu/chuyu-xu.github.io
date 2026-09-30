@@ -1,16 +1,11 @@
-<!-- Generated with Claude -->
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business Analytics Portfolio</title>
+    <title>Chuyu Xu | Business Analytics & Consumer Insights</title>
 
     <style>
-      /* ============================================================
-       BASIC STYLES — students can tweak colors/fonts here
-       ============================================================ */
       * {
         box-sizing: border-box;
         margin: 0;
@@ -30,38 +25,6 @@
         padding: 40px 20px;
       }
 
-      /* ---------- HEADER (photo + name + subheading) ---------- */
-      header {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-
-      /* Empty space for photo — replace with your own <img> if you like */
-      .photo {
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        background: #ddd;
-        border: 2px dashed #aaa;
-        margin: 0 auto 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #888;
-        font-size: 13px;
-        object-fit: cover
-      }
-
-      header h1 {
-        font-size: 28px;
-        margin-bottom: 6px;
-      } /* NAME */
-      header p {
-        font-size: 16px;
-        color: #555;
-      } /* EXPERIENCES */
-
-      /* ---------- TABS ---------- */
       .tabs {
         display: flex;
         justify-content: center;
@@ -84,22 +47,14 @@
         border-color: #2c3e50;
       }
 
-      /* ---------- TAB CONTENT ---------- */
       .tab-content {
         display: none;
       }
+
       .tab-content.active {
         display: block;
       }
 
-      .panel {
-        background: #fff;
-        border: 1px solid #eee;
-        border-radius: 6px;
-        padding: 24px;
-      }
-
-      /* ---------- PROJECT CARDS (1 x 3 grid) ---------- */
       .cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -113,343 +68,406 @@
         background: #fff;
       }
 
-      /* Empty space for project photo */
-      .card-photo {
-        height: 120px;
-        background: #ddd;
-        border-bottom: 1px dashed #aaa;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #888;
-        font-size: 12px;
-      }
-
       .card-text {
         padding: 14px;
       }
+
       .card-text h3 {
         font-size: 16px;
         margin-bottom: 6px;
       }
+
       .card-text p {
         font-size: 14px;
         color: #555;
       }
 
-      /* ---------- MOBILE: stack cards vertically ---------- */
       @media (max-width: 640px) {
         .cards {
           grid-template-columns: 1fr;
         }
       }
 
-.experience-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 18px;
-    max-width: 900px;
-    margin: 0 auto;
-}
+      .experience-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
 
-.experience-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 22px;
-}
+      .experience-card {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 22px;
+      }
 
-.experience-card h3 {
-    margin-bottom: 6px;
-}
+      .experience-card h3 {
+        margin-bottom: 6px;
+      }
 
-.experience-card h4 {
-    margin-bottom: 6px;
-    font-size: 15px;
-}
+      .experience-card h4 {
+        margin-bottom: 6px;
+        font-size: 15px;
+      }
 
-.meta {
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 12px;
-}
+      .meta {
+        color: #777;
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
 
-.panel p {
-    margin-bottom: 16px;
-}
+      .project-tags {
+        color: #777;
+        font-size: 13px;
+        margin: 6px 0 10px;
+      }
 
-.project-tags {
-    color: #777;
-    font-size: 13px;
-    margin: 6px 0 10px;
-}
-.contact-links {
-    margin-top: 8px;
-    font-size: 14px;
-}
+      .contact-links {
+        margin-top: 8px;
+        font-size: 14px;
+      }
 
-.contact-links a {
-    color: #555;
-    text-decoration: none;
-}
+      .contact-links a {
+        color: #555;
+        text-decoration: none;
+      }
 
-.contact-links a:hover {
-    text-decoration: underline;
-}
+      .contact-links a:hover {
+        text-decoration: underline;
+      }
 
-      /* ABOUT PAGE LAYOUT */
+      .about-layout {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 28px;
+        align-items: start;
+      }
 
-.about-layout {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 28px;
-    align-items: start;
-}
+      .profile-side {
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 12px;
+        padding: 28px 20px;
+        text-align: center;
+      }
 
-.profile-side {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 12px;
-    padding: 28px 20px;
-    text-align: center;
-}
+      .about-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 16px;
+      }
 
-.about-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 16px;
-}
+      .profile-side h2 {
+        margin-bottom: 8px;
+        font-size: 26px;
+      }
 
-.profile-side h2 {
-    margin-bottom: 8px;
-    font-size: 26px;
-}
+      .profile-focus {
+        color: #666;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+      }
 
-.profile-focus {
-    color: #666;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 16px;
-}
+      .about-cards {
+        display: grid;
+        gap: 16px;
+      }
 
-.about-cards {
-    display: grid;
-    gap: 16px;
-}
+      .about-card {
+        background: #fff;
+        border: 1px solid #eee;
+        border-radius: 12px;
+        padding: 22px 24px;
+      }
 
-.about-card {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 12px;
-    padding: 22px 24px;
-}
+      .about-card h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
 
-.about-card h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
+      .about-card p {
+        color: #555;
+        margin-bottom: 12px;
+      }
 
-.about-card p {
-    color: #555;
-    margin-bottom: 12px;
-}
+      .about-card p:last-child {
+        margin-bottom: 0;
+      }
 
-.about-card p:last-child {
-    margin-bottom: 0;
-}
-      
+      @media (max-width: 700px) {
+        .about-layout {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
 
   <body>
     <div class="container">
 
-      <!-- ============================================================
-         TABS
-         ============================================================ -->
       <div class="tabs">
-        <button class="tab-button active" onclick="showTab('about')">
+        <button class="tab-button active" onclick="showTab('about', this)">
           About Me
         </button>
-        <button class="tab-button" onclick="showTab('projects')">
+        <button class="tab-button" onclick="showTab('projects', this)">
           Projects
         </button>
-        <button class="tab-button" onclick="showTab('experience')">
+        <button class="tab-button" onclick="showTab('experience', this)">
           Experience
         </button>
       </div>
 
-<!-- ---------- TAB 1: ABOUT ME ---------- -->
-<div id="about" class="tab-content active">
+      <!-- ABOUT ME -->
+      <div id="about" class="tab-content active">
+        <div class="about-layout">
 
-    <div class="about-layout">
-
-        <div class="profile-side">
-            <img src="Chuyu Xu Headshot.jpg" class="about-photo" alt="Chuyu Xu">
+          <div class="profile-side">
+            <img
+              src="Chuyu Xu Headshot.jpg"
+              class="about-photo"
+              alt="Chuyu Xu"
+            />
 
             <h2>Chuyu Xu</h2>
 
             <p class="profile-focus">
-                Business Analytics · Finance · Economics · Data Analysis
+              Business Analytics · Consumer Insights · Media & Entertainment
             </p>
 
             <p class="contact-links">
-                <a href="https://www.linkedin.com/in/chuyu-xu-1a2594421/" target="_blank">
-                    LinkedIn
-                </a>
+              <a
+                href="https://www.linkedin.com/in/chuyu-xu"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
             </p>
 
             <p class="contact-links">
-                <a href="mailto:chuyu.xu@mail.mcgill.ca">
-                    chuyu.xu@mail.mcgill.ca
-                </a>
+              <a href="mailto:Chuyu.xu@hotmail.com">
+                Chuyu.xu@hotmail.com
+              </a>
             </p>
-        </div>
+          </div>
 
-        <div class="about-cards">
-
-            <div class="about-card">
-                <h3>About Me</h3>
-                <p>
-                    I am currently pursuing a Master of Management in Analytics (MMA)
-                    at McGill University. My interests lie in business analytics,
-                    financial analysis, and data-driven decision-making.
-                </p>
-            </div>
+          <div class="about-cards">
 
             <div class="about-card">
-                <h3>Education</h3>
-
-                <p>
-                    <strong>McGill University</strong><br>
-                    Master of Management in Analytics
-                </p>
-
-                <p>
-                    <strong>Queen’s University</strong><br>
-                    Bachelor of Arts in Economics
-                </p>
+              <h3>About Me</h3>
+              <p>
+                I am currently pursuing a Master of Management in Analytics
+                (MMA) at McGill University, with a background in Economics.
+                I am interested in using data and consumer insights to
+                understand audience behaviour, market trends, and business
+                decision-making, particularly in the media, music, and
+                entertainment industries.
+              </p>
             </div>
 
             <div class="about-card">
-                <h3>Career Goals</h3>
-                <p>
-                    I am interested in applying economics, finance, and analytical
-                    tools to solve business problems and support strategic
-                    decision-making. My career interests include business analytics,
-                    financial analytics, strategy, and data-driven consulting.
-                </p>
+              <h3>Education</h3>
+
+              <p>
+                <strong>McGill University</strong><br />
+                Master of Management in Analytics
+              </p>
+
+              <p>
+                <strong>Queen’s University</strong><br />
+                Bachelor of Arts in Economics
+              </p>
+
+              <p>
+                <strong>National Taiwan University</strong><br />
+                International Academic Exchange
+              </p>
             </div>
 
+            <div class="about-card">
+              <h3>Career Goals</h3>
+              <p>
+                I am interested in opportunities related to consumer insights,
+                audience analytics, market research, business intelligence, and
+                strategy. I hope to work at the intersection of data, business,
+                and consumer behaviour, particularly within media and
+                entertainment, rather than in a purely technical analytics role.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <h3>Skills</h3>
+
+              <p>
+                <strong>Analytics:</strong>
+                Python · SQL · Excel · Statistical Analysis · Regression
+                Analysis · Optimization
+              </p>
+
+              <p>
+                <strong>Business & Research:</strong>
+                Business Intelligence · Quantitative Research · Market Analysis
+                · Data-driven Decision Making · Client Communication
+              </p>
+            </div>
+
+          </div>
         </div>
+      </div>
 
-    </div>
+      <!-- PROJECTS -->
+      <div id="projects" class="tab-content">
+        <div class="cards">
 
-</div>
-
-
-<!-- ---------- TAB 2: PROJECTS ---------- -->
-<div id="projects" class="tab-content">
-
-    <div class="cards">
-
-        <div class="card">
+          <div class="card">
             <div class="card-text">
-                <h3>Comparative Analysis of the Motherhood Penalty in the U.S. and Canada</h3>
-                <p class="project-tags">
-                    Economics · Policy Analysis · Independent Research
-                </p>
-                <p>
-                    Conducted an independent economic research project examining the effects
-                    of motherhood on women's wages and employment in the United States and
-                    Canada, with a particular focus on how differences in family and
-                    labor-market policies contribute to cross-country variation in the
-                    motherhood penalty.
-                </p>
-            </div>
-        </div>
+              <h3>
+                Comparative Analysis of the Motherhood Penalty in the U.S. and Canada
+              </h3>
 
-        <div class="card">
+              <p class="project-tags">
+                Economics · Policy Analysis · Independent Research
+              </p>
+
+              <p>
+                Conducted an independent economic research project examining
+                the effects of motherhood on women's wages and employment in
+                the United States and Canada, with a particular focus on how
+                differences in family and labor-market policies contribute to
+                cross-country variation in the motherhood penalty.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
             <div class="card-text">
-                <h3>Private Equity Valuation and Policy Analysis</h3>
-                <p class="project-tags">
-                    Financial Analysis · Valuation · Policy Analysis
-                </p>
-                <p>
-                    Conducted financial and valuation analysis for private equity projects
-                    using corporate financial datasets and market data. Evaluated company
-                    performance and examined government subsidy and tax rebate programs to
-                    support valuation assessments and investment-related recommendations.
-                </p>
-            </div>
-        </div>
+              <h3>Private Equity Valuation and Policy Analysis</h3>
 
-        <div class="card">
+              <p class="project-tags">
+                Financial Analysis · Valuation · Policy Analysis
+              </p>
+
+              <p>
+                Conducted financial and valuation analysis for private equity
+                projects using corporate financial datasets and market data.
+                Evaluated company performance and examined government subsidy
+                and tax rebate programs to support valuation assessments,
+                investment-related recommendations, and business
+                decision-making.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
             <div class="card-text">
-                <h3>Financial Market and Investment Analysis</h3>
-                <p class="project-tags">
-                    Market Analysis · Investment · Risk Assessment
-                </p>
-                <p>
-                    Analyzed stock and fund performance using market data and applied
-                    financial theory to investment scenarios involving portfolio
-                    construction and risk assessment. Examined how economic policies and
-                    market conditions influence asset price movements and volatility.
-                </p>
+              <h3>Financial Market and Investment Analysis</h3>
+
+              <p class="project-tags">
+                Market Analysis · Investment · Risk Assessment
+              </p>
+
+              <p>
+                Analyzed stock and fund performance using market data and
+                applied financial theory to investment scenarios involving
+                portfolio construction and risk assessment. Examined how
+                economic policies and market conditions influence asset price
+                movements and volatility.
+              </p>
             </div>
+          </div>
+
         </div>
+      </div>
 
-    </div>
+      <!-- EXPERIENCE -->
+      <div id="experience" class="tab-content">
+        <div class="experience-grid">
 
-</div>
+          <div class="experience-card">
+            <h3>Business Intelligence Analyst</h3>
+            <h4>Academic Analytics Consulting Project with CN Rail</h4>
+            <p class="meta">
+              Montreal, Canada · Sept 2026 – Present
+            </p>
+            <p>
+              Contributing to a client-based analytics project and supporting
+              the development of data-driven reporting and decision-making
+              solutions.
+            </p>
+          </div>
 
+          <div class="experience-card">
+            <h3>Teaching Assistant, ECON 110/111</h3>
+            <h4>Queen’s University – Department of Economics</h4>
+            <p class="meta">
+              Kingston, Canada · Sept 2025 – Dec 2025
+            </p>
+            <p>
+              Conducted weekly office hours to support undergraduate students
+              with course concepts and problem-solving, and graded coursework
+              according to departmental standards.
+            </p>
+          </div>
 
-<!-- ---------- TAB 3: EXPERIENCE ---------- -->
-<div id="experience" class="tab-content">
-    <div class="experience-grid">
-
-        <div class="experience-card">
+          <div class="experience-card">
             <h3>Research and Valuation Intern</h3>
             <h4>Guorongxinghua (Hubei) Assets Appraisal Co., Ltd.</h4>
-            <p class="meta">Wuhan, China · May 2024 – Aug 2024</p>
-            <p>Conducted financial analysis, private equity valuation, market data analysis, and policy evaluation to support valuation and investment-related recommendations.</p>
-        </div>
+            <p class="meta">
+              Wuhan, China · May 2024 – Aug 2024
+            </p>
+            <p>
+              Conducted financial analysis, private equity valuation, market
+              data analysis, and policy evaluation to support valuation and
+              investment-related recommendations.
+            </p>
+          </div>
 
-        <div class="experience-card">
+          <div class="experience-card">
             <h3>Client Services and Operations Intern</h3>
             <h4>China Minsheng Bank Corp., Ltd.</h4>
-            <p class="meta">Wuhan, China · May 2023 – Aug 2023</p>
-            <p>Supported corporate clients through financial needs analysis, banking operations, and customized financial service solutions.</p>
-        </div>
+            <p class="meta">
+              Wuhan, China · May 2023 – Aug 2023
+            </p>
+            <p>
+              Supported corporate clients through financial needs analysis,
+              banking operations, and customized financial service solutions.
+            </p>
+          </div>
 
-        <div class="experience-card">
+          <div class="experience-card">
             <h3>Audit and Accounting Intern</h3>
             <h4>ShineWing Certified Public Accountants LLP</h4>
-            <p class="meta">Wuhan, China · May 2022 – Jul 2022</p>
-            <p>Analyzed financial statements and accounting records and supported audit, tax documentation, and financial reporting processes.</p>
+            <p class="meta">
+              Wuhan, China · May 2022 – Jul 2022
+            </p>
+            <p>
+              Analyzed financial statements and accounting records and
+              supported audit, tax documentation, and financial reporting
+              processes.
+            </p>
+          </div>
+
         </div>
+      </div>
 
     </div>
-</div>
 
-    <!-- ============================================================
-       SIMPLE TAB SWITCHING SCRIPT
-       ============================================================ -->
     <script>
-      function showTab(id) {
-        // hide all tab contents
+      function showTab(id, button) {
         document.querySelectorAll(".tab-content").forEach(function (el) {
           el.classList.remove("active");
         });
-        // remove active state from all buttons
+
         document.querySelectorAll(".tab-button").forEach(function (btn) {
           btn.classList.remove("active");
         });
-        // show the selected tab + highlight the clicked button
+
         document.getElementById(id).classList.add("active");
-        event.target.classList.add("active");
+        button.classList.add("active");
       }
     </script>
   </body>
