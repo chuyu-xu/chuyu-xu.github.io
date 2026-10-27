@@ -248,11 +248,6 @@
               </a>
             </p>
 
-            <p class="contact-links">
-              <a href="mailto:Chuyu.xu@hotmail.com">
-                Chuyu.xu@hotmail.com
-              </a>
-            </p>
           </div>
 
           <div class="about-cards">
@@ -323,37 +318,19 @@
       <div id="projects" class="tab-content">
         <div class="cards">
 
-          <div class="card">
-            <div class="card-text">
-              <h3>
-                Comparative Analysis of the Motherhood Penalty in the U.S. and Canada
-              </h3>
-
-              <p class="project-tags">
-                Economics · Policy Analysis · Independent Research
-              </p>
-
-              <p>
-                Conducted an independent economic research project examining
-                the effects of motherhood on women's wages and employment in
-                the United States and Canada, with a particular focus on how
-                differences in family and labor-market policies contribute to
-                cross-country variation in the motherhood penalty.
-              </p>
-            </div>
-          </div>
+          <div class="card"><div class="card-text"><h3><a href="projects/motherhood-penalty/">Motherhood, Employment &amp; Wages</a></h3><p class="project-tags">Stata · Logit · OLS · Heckman selection</p><p>An academically guided study of employment and wage differences in Canada and the U.S., highlighting survey-data comparison, model interpretation and evidence limits.</p><p style="margin-top:12px"><a href="projects/motherhood-penalty/">Explore the research →</a></p></div></div>
 
           <div class="card">
             <div class="card-text">
-              <h3>Private Equity Valuation and Policy Analysis</h3>
+              <h3>Corporate Valuation and Policy Analysis</h3>
 
               <p class="project-tags">
                 Financial Analysis · Valuation · Policy Analysis
               </p>
 
               <p>
-                Conducted financial and valuation analysis for private equity
-                projects using corporate financial datasets and market data.
+                Analyzed corporate financial datasets and market data
+                to support valuation assessments.
                 Evaluated company performance and examined government subsidy
                 and tax rebate programs to support valuation assessments,
                 investment-related recommendations, and business
@@ -362,23 +339,6 @@
             </div>
           </div>
 
-          <div class="card">
-            <div class="card-text">
-              <h3>Financial Market and Investment Analysis</h3>
-
-              <p class="project-tags">
-                Market Analysis · Investment · Risk Assessment
-              </p>
-
-              <p>
-                Analyzed stock and fund performance using market data and
-                applied financial theory to investment scenarios involving
-                portfolio construction and risk assessment. Examined how
-                economic policies and market conditions influence asset price
-                movements and volatility.
-              </p>
-            </div>
-          </div>
 
         </div>
       </div>
@@ -408,8 +368,8 @@
             </p>
             <p>
               Conducted weekly office hours to support undergraduate students
-              with course concepts and problem-solving, and graded coursework
-              according to departmental standards.
+              with course concepts and problem-solving, and graded coursework with feedback on analytical errors
+              and problem-solving approaches.
             </p>
           </div>
 
@@ -420,7 +380,7 @@
               Wuhan, China · May 2024 – Aug 2024
             </p>
             <p>
-              Conducted financial analysis, private equity valuation, market
+              Conducted financial analysis, valuation, market
               data analysis, and policy evaluation to support valuation and
               investment-related recommendations.
             </p>
@@ -469,6 +429,16 @@
         document.getElementById(id).classList.add("active");
         button.classList.add("active");
       }
+      function openHashTab() {
+        const name=location.hash.slice(1);
+        if (["about","projects","experience"].includes(name)) {
+          const button=Array.from(document.querySelectorAll('.tab-button')).find(b=>b.getAttribute('onclick').includes("'"+name+"'"));
+          showTab(name,button);
+        }
+      }
+      window.addEventListener('hashchange',openHashTab);
+      openHashTab();
     </script>
   </body>
 </html>
+
