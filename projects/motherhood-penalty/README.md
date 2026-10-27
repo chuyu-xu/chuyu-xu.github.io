@@ -70,7 +70,7 @@ The Canadian extension groups reported reasons for leaving work or not seeking w
 
 ### Reading the findings
 
-The chart reproduces the final paper’s Table 1 employment marginal effects: −6.29 percentage points for Canada and −4.98 for the United States. These are changes in predicted probability associated with the child-presence indicator, not relative percentage changes. The U.S. Heckman Mother coefficient is −0.0084*** in Table 2, column 4, with standard error 0.0028. The table legend defines *** as p < 0.01, consistent with the discussion on PDF page 27. The exit findings are summarized qualitatively here. Log-wage and multinomial-logit coefficients have different interpretations and should not be read as probability changes. Statistical insignificance does not establish an absent relationship.
+The chart reproduces the final paper’s Table 1 employment marginal effects: −6.29 percentage points for Canada and −4.98 for the United States. These are changes in predicted probability associated with the child-presence indicator, not relative percentage changes. The U.S. Heckman Mother coefficient is −0.0084*** in Table 2, column 4, with standard error 0.0028. The exit findings are summarized qualitatively here. Log-wage and multinomial-logit coefficients have different interpretations and should not be read as probability changes. Statistical insignificance does not establish an absent relationship.
 
 ## Data-source links
 
