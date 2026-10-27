@@ -18,7 +18,7 @@ My submitted data description records my use of Stata, downloading and combining
 
 The AI-use disclosure records ChatGPT assistance with econometric concepts, grammar, academic tone and explanations of results. This assistance is disclosed alongside the advisor’s guidance, without treating either as a separate team achievement attributable solely to me.
 
-The principal deliverables were an English research paper, three regression tables, a Stata code printout, a data description and an AI-use statement. No commercial deployment or policy implementation is claimed.
+The principal deliverables were an English research paper, three regression tables, a Stata code printout, a data description and an AI-use statement. 
 
 ## Data and analytical approach
 
@@ -40,7 +40,7 @@ The principal deliverables were an English research paper, three regression tabl
 
 Figure: redrawn from the paper’s Table 1 (PDF p. 23). Values are conditional associations, not causal effects or relative percentage changes. Uncertainty intervals are not shown. The estimates have not been rerun for this portfolio.
 
-**2. Reported wage differences depend on the model specification.** Table 2 reports Canadian log-wage coefficients of −0.0135 in OLS (p < 0.01) and +0.0244 in Heckman (not statistically significant). The corresponding U.S. coefficients are −0.0554 (p < 0.01) and −0.0084 (p < 0.05 according to the table). These are log-wage coefficients, not exact percentage changes. Differences in sample restrictions and weights limit a direct comparison across specifications.
+**2. Reported wage differences depend on the model specification.** Table 2 reports Canadian log-wage coefficients of −0.0135 in OLS (p < 0.01) and +0.0244 in Heckman (not statistically significant). The corresponding U.S. coefficients are −0.0554 (p < 0.01) and −0.0084 (significance reporting disputed; see Source consistency checks). These are log-wage coefficients, not exact percentage changes. Differences in sample restrictions and weights limit a direct comparison across specifications.
 
 **3. Exit reasons provide a further descriptive perspective.** The Canadian multinomial model reports a positive motherhood coefficient for voluntary exit (+1.0173, p < 0.01), while the involuntary-exit coefficient is statistically insignificant (−0.0062). These are model coefficients, not probability changes. The category mapping and reference group still require verification against the survey codebook.
 
@@ -50,14 +50,14 @@ Figure: redrawn from the paper’s Table 1 (PDF p. 23). Values are conditional a
 
 **What remains a hypothesis.** Family-policy differences offer a possible context for the cross-country patterns, but this design cannot determine which policy caused a difference. The exit results do not establish why every individual left work or demonstrate the absence of employer constraints.
 
-**Relevance to insights and business analysis.** Comparing groups requires consistent definitions, interpretable metrics and attention to who is represented in the data. These are transferable analytical practices for consumer or audience research, marketing analysis and business analysis. Applying them to those settings is a potential transfer of approach, not a commercial application tested in this project. No customer response, campaign lift, revenue impact or business recommendation implemented by an organization was measured.
+**Relevance to insights and business analysis.** Comparing groups requires consistent definitions, interpretable metrics and attention to who is represented in the data. These are transferable analytical practices for consumer or audience research, marketing analysis and business analysis. Applying them to those settings is a potential transfer of approach, not a commercial application tested in this project. 
 
 ## Limitations
 
 - The observational comparison does not track the same women before and after childbirth or eliminate unobserved differences. Country interactions do not isolate policy effects.
 - Resident-child indicators are imperfect proxies for motherhood. Employment coding, wage units and currencies, and cross-country category mappings require further verification.
 - The printed code does not apply the same female-sample restrictions and survey weights in every model. Single-country Heckman commands use maximum likelihood by default; the pooled command uses two-step estimation. Consequently, model differences cannot be attributed solely to a selection correction.
-- The paper and code contain unresolved details, including inconsistent age ranges, a repeated variable definition, and a significance-level discrepancy in the U.S. Heckman result. This case follows the reported table for that significance level.
+- The paper and code contain unresolved details, including inconsistent age ranges, a repeated variable definition, and a significance-level discrepancy in the U.S. Heckman result. The source checks below retain the disagreement instead of selecting an authoritative significance level.
 - The code is available privately as a PDF printout with local paths. The two data files exceeded the portfolio environment’s transfer-size limit and were not read or rerun. This is a research case study, not a verified reproduction package.
 - Statistical insignificance does not establish that a relationship is absent. The results cannot demonstrate no wage disadvantage, no discrimination, or the effectiveness of a policy intervention.
 
@@ -78,3 +78,19 @@ The public-facing scope is the research summary, selected aggregate figures, fin
 View the static site from its root using `python -m http.server 8765 --bind 127.0.0.1`, then open `/projects/motherhood-penalty/`. There are no build dependencies for viewing the HTML. This command serves the website only; it does not run the Stata analysis.
 
 This case study is part of the existing chuyu-xu.github.io portfolio. The original paper, code printout and microdata are not included.
+
+## Source consistency checks
+
+Review date: October 27, 2026. These checks compare the supplied printed code with the paper and its image tables; they do not reproduce the estimates. The original source files have not been changed.
+
+| Item | Evidence checked | Status and consequence |
+|---|---|---|
+| Female sample and weights | Code lines 43–47, 94–97 and 147 specify female filters and probability weights. Heckman lines 40, 174 and 300 omit those filters/weights. | Confirmed implementation difference in the supplied printout. No claim that every model is a weighted female-only analysis. Prior preprocessing not shown in these materials cannot be ruled out. |
+| Observation counts | Table 1 reports Canada 405,067 and U.S. 555,191 for employment. Table 2 reports Canada OLS 291,999 / Heckman 294,100 and U.S. OLS 390,052 / Heckman 1,289,778. | Confirmed reported counts, not independently computed or necessarily unique people. OLS uses observed wages; Heckman reports selection-model observations. Counts alone cannot diagnose a coding error or attribute the difference to selection correction. Exact composition remains unresolved. |
+| U.S. Heckman significance | Table 2 coefficient −0.0084, SE 0.0028, marked **; table legend ** denotes p < 0.05. Paper prose says p < 0.01. | Rounded values give z ≈ −3 and two-sided normal p ≈ 0.0027. This makes the star annotation inconsistent with the convention of assigning the highest applicable star tier. Both threshold statements could logically hold, but the intended exact output is unresolved. No authoritative p-value is selected without a model log. |
+| Heckman estimator | Single-country commands omit twostep; pooled command specifies twostep. | Stata default is maximum likelihood for the former; two-step is explicit for the latter. Paper-wide two-stage wording does not accurately describe all printed commands. |
+| Age range | Introduction says 25–54; data section says 25–59. U.S. code creates groups 25–59; Canadian code carries age_12 forward with no explicit restriction. | Conflicting source descriptions. Do not claim a single verified age range across all models. |
+| Execution | Employment pooling loads a saved file that already defines employed (line 90), then calls gen employed again at line 180. | Sequential execution would stop at an already-defined variable. Original execution history or logs are needed; the PDF is not advertised as a runnable script. |
+| Wage and exit definitions | Canadian code logs hrlyearn directly, while prose describes its units differently; country employment codes and exit reason categories require the corresponding dictionaries. | Source conflict identified; final units, category equivalence and reference group are not verified. The exit result cannot establish voluntary preference or exclude discrimination. |
+
+The source portal was checked, but the two supplied data files each exceed the environment’s 32 MiB transfer limit and could not be loaded. No sample counts, model weights or empirical results have been recomputed. Resolving the remaining empirical conflicts requires accessible data, the relevant historical codebooks and original estimation logs. The concise webpage keeps the issues that change interpretation visible rather than dropping the findings or hiding caveats.

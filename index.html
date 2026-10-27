@@ -5,206 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chuyu Xu | Business Analytics & Consumer Insights</title>
 
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #222;
-        background: #f4f7fb;
-        line-height: 1.5;
-      }
-
-      .container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 40px 20px;
-      }
-
-      .tabs {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 24px;
-      }
-
-      .tab-button {
-        padding: 10px 22px;
-        border: 1px solid #ccc;
-        background: #fff;
-        cursor: pointer;
-        font-size: 15px;
-        border-radius: 4px;
-      }
-
-      .tab-button.active {
-        background: #2c3e50;
-        color: #fff;
-        border-color: #2c3e50;
-      }
-
-      .tab-content {
-        display: none;
-      }
-
-      .tab-content.active {
-        display: block;
-      }
-
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
-      }
-
-      .card {
-        border: 1px solid #eee;
-        border-radius: 6px;
-        overflow: hidden;
-        background: #fff;
-      }
-
-      .card-text {
-        padding: 14px;
-      }
-
-      .card-text h3 {
-        font-size: 16px;
-        margin-bottom: 6px;
-      }
-
-      .card-text p {
-        font-size: 14px;
-        color: #555;
-      }
-
-      @media (max-width: 640px) {
-        .cards {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      .experience-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 18px;
-        max-width: 900px;
-        margin: 0 auto;
-      }
-
-      .experience-card {
-        background: white;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        padding: 22px;
-      }
-
-      .experience-card h3 {
-        margin-bottom: 6px;
-      }
-
-      .experience-card h4 {
-        margin-bottom: 6px;
-        font-size: 15px;
-      }
-
-      .meta {
-        color: #777;
-        font-size: 14px;
-        margin-bottom: 12px;
-      }
-
-      .project-tags {
-        color: #777;
-        font-size: 13px;
-        margin: 6px 0 10px;
-      }
-
-      .contact-links {
-        margin-top: 8px;
-        font-size: 14px;
-      }
-
-      .contact-links a {
-        color: #555;
-        text-decoration: none;
-      }
-
-      .contact-links a:hover {
-        text-decoration: underline;
-      }
-
-      .about-layout {
-        display: grid;
-        grid-template-columns: 280px 1fr;
-        gap: 28px;
-        align-items: start;
-      }
-
-      .profile-side {
-        background: #fff;
-        border: 1px solid #eee;
-        border-radius: 12px;
-        padding: 28px 20px;
-        text-align: center;
-      }
-
-      .about-photo {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 16px;
-      }
-
-      .profile-side h2 {
-        margin-bottom: 8px;
-        font-size: 26px;
-      }
-
-      .profile-focus {
-        color: #666;
-        font-size: 14px;
-        line-height: 1.6;
-        margin-bottom: 16px;
-      }
-
-      .about-cards {
-        display: grid;
-        gap: 16px;
-      }
-
-      .about-card {
-        background: #fff;
-        border: 1px solid #eee;
-        border-radius: 12px;
-        padding: 22px 24px;
-      }
-
-      .about-card h3 {
-        margin-bottom: 10px;
-        font-size: 18px;
-      }
-
-      .about-card p {
-        color: #555;
-        margin-bottom: 12px;
-      }
-
-      .about-card p:last-child {
-        margin-bottom: 0;
-      }
-
-      @media (max-width: 700px) {
-        .about-layout {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -315,33 +116,19 @@
       </div>
 
       <!-- PROJECTS -->
-      <div id="projects" class="tab-content">
+      <section id="projects" class="tab-content" aria-label="Selected Projects">
+        <header class="project-intro"><div class="eyebrow">Research &amp; analysis</div><h1>Selected Projects</h1><p>Research and analytical work exploring how data, context and careful interpretation inform decisions.</p></header>
         <div class="cards">
-
-          <div class="card"><div class="card-text"><h3><a href="projects/motherhood-penalty/">Motherhood, Employment &amp; Wages</a></h3><p class="project-tags">Stata · Logit · OLS · Heckman selection</p><p>An academically guided study of employment and wage differences in Canada and the U.S., highlighting survey-data comparison, model interpretation and evidence limits.</p><p style="margin-top:12px"><a href="projects/motherhood-penalty/">Explore the research →</a></p></div></div>
-
-          <div class="card">
-            <div class="card-text">
-              <h3>Corporate Valuation and Policy Analysis</h3>
-
-              <p class="project-tags">
-                Financial Analysis · Valuation · Policy Analysis
-              </p>
-
-              <p>
-                Analyzed corporate financial datasets and market data
-                to support valuation assessments.
-                Evaluated company performance and examined government subsidy
-                and tax rebate programs to support valuation assessments,
-                investment-related recommendations, and business
-                decision-making.
-              </p>
-            </div>
-          </div>
-
-
+          <a class="project-card" href="projects/motherhood-penalty/">
+            <div class="card-visual"><picture><source media="(max-width: 580px)" srcset="projects/motherhood-penalty/employment-associations-mobile.svg"><img src="projects/motherhood-penalty/employment-associations.svg" alt="Reported employment associations: Canada minus 6.29 percentage points; United States minus 4.98." /></picture></div>
+            <div class="card-text"><div class="eyebrow">Research case study · 2011–2024 data</div><h2>Motherhood, Employment &amp; Wages</h2><p class="card-summary">Comparing employment and wage patterns in Canada and the U.S., with attention to measurement and sample selection.</p><div class="tags"><span class="tag">Stata</span><span class="tag">Survey data</span><span class="tag">Regression</span></div><span class="card-action">Read the case study <span aria-hidden="true">→</span></span></div>
+          </a>
+          <a class="project-card" href="#experience" aria-label="Corporate Valuation and Policy Analysis: view related experience">
+            <div class="card-visual"><div class="scope-preview"><span>Analytical scope</span><div><strong>Company<br>performance</strong><i aria-hidden="true">→</i><strong>Policy<br>context</strong></div><small>Financial data · Subsidy eligibility · Valuation</small></div></div>
+            <div class="card-text"><div class="eyebrow">Professional experience</div><h2>Corporate Valuation &amp; Policy Analysis</h2><p class="card-summary">Financial-data analysis and assessment of subsidy and tax-rebate eligibility to support valuation work.</p><div class="tags"><span class="tag">Financial analysis</span><span class="tag">Valuation</span><span class="tag">Policy research</span></div><span class="card-action">View related experience <span aria-hidden="true">→</span></span></div>
+          </a>
         </div>
-      </div>
+      </section>
 
       <!-- EXPERIENCE -->
       <div id="experience" class="tab-content">
