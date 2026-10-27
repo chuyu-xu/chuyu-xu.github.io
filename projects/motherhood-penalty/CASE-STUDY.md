@@ -1,60 +1,52 @@
 # Motherhood, Employment & Wages
 
-## Research overview
+Research case study · Queen’s University · Canada & United States · 2011–2024
 
-How do employment and wage differences associated with motherhood vary between Canada and the United States? This research uses 2011–2024 Canadian Labour Force Survey (LFS) and U.S. CPS ASEC microdata to compare those outcomes and explore reported reasons for leaving work in Canada.
+## Research question
 
-The motivation is a measurement problem: looking only at wages among people who work can miss differences in who remains employed. Contrasting two policy environments adds context, but does not identify the causal effect of a particular parental-leave or childcare policy.
+How is motherhood associated with employment and wages in Canada and the United States? This undergraduate research compares labour-market outcomes across two countries with different parental-leave and childcare policy environments.
 
-The project demonstrates evidence synthesis, comparison across populations, survey-variable harmonization, model interpretation and communication of uncertainty. These analytical practices are relevant to insights and business-analysis work; the research itself concerns labour markets, not consumers, audiences or marketing campaigns.
+The central question goes beyond how much working mothers earn: differences in employment also shape whose wages are observed. Examining both outcomes provides a fuller view of the motherhood penalty.
 
-## My contribution
+## Data & methods
 
-I independently wrote the complete research paper. My thesis advisor provided key guidance on model selection and throughout the research process. The project should therefore be understood as research conducted with substantive academic guidance, rather than an entirely unguided independent study.
+I used Canadian Labour Force Survey (LFS) and U.S. Current Population Survey Annual Social and Economic Supplement (CPS ASEC) microdata covering 2011–2024. I combined Canadian files and selected March observations to align survey timing, then processed household and demographic variables for cross-country comparison.
 
-My submitted data description records my use of Stata, downloading and combining survey extracts, and selecting March observations for Canada. The submitted materials document variable recoding, model estimation and regression-table exports. Those materials support the account of the analytical workflow below; they do not establish that every methodological choice was made without guidance.
-
-The AI-use disclosure records ChatGPT assistance with econometric concepts, grammar, academic tone and explanations of results. This assistance is disclosed alongside the advisor’s guidance, without treating either as a separate team achievement attributable solely to me.
-
-The principal deliverables were an English research paper, three regression tables, a Stata code printout, a data description and an AI-use statement. 
-
-## Data and analytical approach
-
-**Build a comparable view.** The materials describe combining 2011–2024 Canadian LFS files and retaining March observations to align survey timing with the U.S. CPS ASEC extract. Child presence, age, education, marital status and employment variables are recoded for comparison. The U.S. workflow constructs hourly earnings from annual wage income and usual weekly hours. Definitions and wage units remain important comparability checks.
-
-**Separate participation from wages.** Country-specific logit models estimate employment associations; average marginal effects express the results as percentage-point differences. OLS models of log hourly wages provide a baseline for wage comparisons among observed workers. The specifications include age, education, marital-status and survey-year controls.
-
-**Examine selection sensitivity.** Heckman models address the concern that wages are observed for a selected set of workers, with youngest-child age included in the selection equation. Their interpretation depends on the exclusion restriction and comparable implementation; using this model does not by itself validate those assumptions.
-
-**Compare contexts and explore explanations.** Pooled models include country and motherhood-by-country terms. A Canadian multinomial-logit extension uses reported exit reasons to distinguish voluntary and involuntary categories. The exit analysis is descriptive, not a test that rules out discrimination or proves personal preference.
-
-**Communicate the evidence.** The Stata workflow stores model estimates and uses esttab to export regression tables. The case study redraws a selected table result and separates reported findings from subsequent interpretation and implementation checks.
+- **Logit · Employment:** Estimate a binary employment outcome and express the association as a percentage-point marginal effect.
+- **OLS · Wages:** Compare log hourly wages using age, education, marital-status and survey-year controls.
+- **Heckman · Selection:** Examine wage estimates while accounting for the process through which wages are observed among workers.
+- **Pooled & exit models:** Compare country patterns through interaction terms and examine voluntary and involuntary exit categories in Canada.
 
 ## Key findings
 
-**1. Reported employment differences are larger in the Canadian specification.** In the country-specific models, the average marginal effect associated with motherhood is −6.29 percentage points for Canada and −4.98 for the United States. Table 1 reports 405,067 and 555,191 model observations respectively; these counts are not necessarily unique people.
+The country-specific employment models associate motherhood with a larger reduction in employment probability in Canada: −6.29 percentage points, compared with −4.98 in the United States.
 
-![Reported employment associations](employment-associations.svg)
+![Employment associations](employment-associations.svg)
 
-Figure: redrawn from the paper’s Table 1 (PDF p. 23). Values are conditional associations, not causal effects or relative percentage changes. Uncertainty intervals are not shown. The estimates have not been rerun for this portfolio.
+Table 1: country-specific average marginal effects associated with motherhood, in percentage points. Figure redrawn from the final paper.
 
-**2. Reported wage differences depend on the model specification.** Table 2 reports Canadian log-wage coefficients of −0.0135 in OLS (p < 0.01) and +0.0244 in Heckman (not statistically significant). The corresponding U.S. coefficients are −0.0554 (p < 0.01) and −0.0084 (significance reporting disputed; see README source checks). These are log-wage coefficients, not exact percentage changes. Differences in sample restrictions and weights limit a direct comparison across specifications.
+The paper’s OLS estimates show a larger negative wage association in the United States. In Canada, the wage estimate becomes statistically indistinguishable from zero in the selection model; this does not establish that no wage difference exists.
 
-**3. Exit reasons provide a further descriptive perspective.** The Canadian multinomial model reports a positive motherhood coefficient for voluntary exit (+1.0173, p < 0.01), while the involuntary-exit coefficient is statistically insignificant (−0.0062). These are model coefficients, not probability changes. The category mapping and reference group still require verification against the survey codebook.
+The Canadian exit analysis also finds a positive association between motherhood and reported voluntary exit. This offers a further perspective on participation patterns, rather than proof of an individual’s preferences or a specific policy mechanism.
 
-## Implications
+## My contribution
 
-**What the evidence supports.** Employment and wages describe different dimensions of labour-market outcomes. The reported patterns support examining both, rather than treating one wage comparison as a complete account. Sensitivity across wage specifications also makes selection into the observed sample a necessary part of interpretation.
+- Downloaded and combined cross-country survey data, including selecting March observations for the Canadian sample.
+- Processed household and demographic variables and used Stata to estimate models and export regression tables.
+- Interpreted employment, wage and exit results alongside the literature and independently wrote the complete paper.
 
-**What remains a hypothesis.** Family-policy differences offer a possible context for the cross-country patterns, but this design cannot determine which policy caused a difference. The exit results do not establish why every individual left work or demonstrate the absence of employer constraints.
+My thesis advisor provided key guidance on model selection and throughout the research process.
 
-**Relevance to insights and business analysis.** Comparing groups requires consistent definitions, interpretable metrics and attention to who is represented in the data. These are transferable analytical practices for consumer or audience research, marketing analysis and business analysis. Applying them to those settings is a potential transfer of approach, not a commercial application tested in this project. 
+## Research significance
 
-## Limitations
+The research shows why employment and wages need to be considered together when studying labour-market inequality. A wage comparison among workers captures only one part of the picture.
 
-- The observational comparison does not track the same women before and after childbirth or eliminate unobserved differences. Country interactions do not isolate policy effects.
-- Resident-child indicators are imperfect proxies for motherhood. Employment coding, wage units and currencies, and cross-country category mappings require further verification.
-- The printed code does not apply the same female-sample restrictions and survey weights in every model. Single-country Heckman commands use maximum likelihood by default; the pooled command uses two-step estimation. Consequently, model differences cannot be attributed solely to a selection correction.
-- The paper and code contain unresolved details, including inconsistent age ranges, a repeated variable definition, and a significance-level discrepancy in the U.S. Heckman result. The README records the conflicting star annotation and the normal approximation implied by the rounded estimate and standard error.
-- The code is available privately as a PDF printout with local paths. The two data files exceeded the portfolio environment’s transfer-size limit and were not read or rerun. This is a research case study, not a verified reproduction package.
-- Statistical insignificance does not establish that a relationship is absent. The results cannot demonstrate no wage disadvantage, no discrimination, or the effectiveness of a policy intervention.
+It also develops analytical skills relevant to insights work: combining data sources, making variables comparable, applying models to distinct questions and translating statistical results into a clear argument. The policy comparison provides context for interpretation, while the evidence remains associational.
+
+## Research limitations
+
+This observational study identifies associations rather than the causal effects of motherhood or particular policies. Differences in survey definitions and measurement affect cross-country comparability. The regression results depend on model specifications, and the Heckman approach additionally relies on its selection assumptions and the youngest-child-age exclusion restriction.
+
+## AI use
+
+I used ChatGPT to clarify econometric concepts, review grammar and academic tone, and help rephrase explanations of results.
