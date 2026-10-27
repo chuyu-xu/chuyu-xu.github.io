@@ -25,7 +25,7 @@ The country-specific employment models associate motherhood with a larger reduct
 
 Table 1: country-specific average marginal effects associated with motherhood, in percentage points. Figure redrawn from the final paper.
 
-The paper’s OLS estimates show a larger negative wage association in the United States. In Canada, the wage estimate becomes statistically indistinguishable from zero in the selection model; this does not establish that no wage difference exists.
+The paper’s OLS estimates show a larger negative wage association in the United States. In the U.S. Heckman model, the association remains negative and statistically significant (Mother coefficient −0.0084, p < 0.01; Table 2, column 4), though smaller in magnitude than the OLS estimate. In Canada, the wage estimate becomes statistically indistinguishable from zero in the selection model; this does not establish that no wage difference exists.
 
 The Canadian exit analysis also finds a positive association between motherhood and reported voluntary exit. This offers a further perspective on participation patterns, rather than proof of an individual’s preferences or a specific policy mechanism.
 
