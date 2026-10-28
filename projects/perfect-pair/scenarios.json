@@ -1,0 +1,32 @@
+[
+  {
+    "id": "maya",
+    "tab": "Fit & width",
+    "title": "A wider fit in the same size",
+    "subtitle": "Maya \u00b7 Size 8 ankle boots feel tight across the toes.",
+    "evidence": "The photo shows no outdoor wear. Reviews point to a narrow toe box; wide-fit feedback and available stock support size 8 wide.",
+    "recommendation": "Recommend size 8 wide, with Smart Credit and a refund still available.",
+    "next": "Reserve the pair and create the exchange and return label. Release shipment after inspection; try another location if the stock hold fails.",
+    "status": "No initial approval \u00b7 inspection required"
+  },
+  {
+    "id": "priya",
+    "tab": "Arrival damage",
+    "title": "Replace the damaged pair and assign the cost",
+    "subtitle": "Priya \u00b7 White sneakers arrive scuffed in a crushed box.",
+    "evidence": "Scuffing, clean soles and a crushed box align with tracking evidence of transit damage.",
+    "recommendation": "Offer a same-size replacement or refund with a free return. Smart Credit is excluded for this damage case.",
+    "next": "Reserve the replacement, prepare the return and confirm condition at inspection. Route the item and support a carrier claim with the evidence.",
+    "status": "No initial approval \u00b7 inspection required"
+  },
+  {
+    "id": "jordan",
+    "tab": "Conflicting evidence",
+    "title": "Pause when the photo and the claim disagree",
+    "subtitle": "Jordan \u00b7 A \u201cnever worn\u201d damage claim conflicts with the photo.",
+    "evidence": "The photo shows outsole wear but no visible damage. Tracking has no exception; prior claims and the amount warrant review.",
+    "recommendation": "Pause settlement and send a neutral review message while a person checks the evidence.",
+    "next": "The case remains pending until a manager completes the review.",
+    "status": "Manager review pending"
+  }
+]
