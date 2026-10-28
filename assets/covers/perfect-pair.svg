@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1005" height="410" viewBox="0 0 1005 410" role="img" aria-labelledby="title desc">
+<title id="title">A return becomes a better product match</title><desc id="desc">A returned shoe connects to product matching and a confirmed replacement.</desc>
+<rect width="1005" height="410" fill="#f3f6f9"/>
+<g fill="none" stroke="#173e56" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M284 185h125m-10-7 10 7-10 7M592 185h125m-10-7 10 7-10 7" stroke="#9bafb9"/>
+<circle cx="210" cy="185" r="70"/><g transform="translate(210 185)"><path d="M-35 12v-30h20l9 18 32 11q10 3 10 15h-71Zm0 4h70M-8-1l7-5M0 3l7-5M-20-28h33m-8-7 8 7-8 7"/></g>
+<circle cx="502" cy="185" r="70"/><g transform="translate(502 185)"><rect x="-37" y="-31" width="25" height="25" rx="3"/><rect x="12" y="6" width="25" height="25" rx="3"/><path d="M-5-19h35m-7-7 7 7-7 7M5 19h-35m7-7-7 7 7 7M-31 6v25h19M31-6v-25H12"/></g>
+<circle cx="794" cy="185" r="70"/><g transform="translate(794 185)"><path d="M-35 12v-30h20l9 18 32 11q10 3 10 15h-71Zm0 4h70M-8-1l7-5M0 3l7-5M3-26l9 9 18-21"/></g>
+</g><g fill="#173e56" font-family="Arial,Helvetica,sans-serif" font-size="16" text-anchor="middle"><text x="210" y="292">Customer return</text><text x="502" y="292">Product matching</text><text x="794" y="292">Better fit</text></g>
+<text x="502" y="344" fill="#606b72" font-family="Arial,Helvetica,sans-serif" font-size="12" letter-spacing="2" text-anchor="middle">AI-ASSISTED RETAIL RETURNS</text>
+</svg>

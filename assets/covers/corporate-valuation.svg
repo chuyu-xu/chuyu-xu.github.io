@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1005" height="410" viewBox="0 0 1005 410" role="img" aria-labelledby="title desc">
+<title id="title">Connecting company performance and policy to valuation</title><desc id="desc">Financial statements connect to policy eligibility review and valuation analysis.</desc>
+<rect width="1005" height="410" fill="#f3f6f9"/>
+<g fill="none" stroke="#173e56" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M284 185h125m-10-7 10 7-10 7M592 185h125m-10-7 10 7-10 7" stroke="#9bafb9"/>
+<circle cx="210" cy="185" r="70"/><g transform="translate(210 185)"><path d="M-32 33v-65h64v65Zm11-47h42M-21 0h9m10 0h9m10 0h2M-21 15h9m10 0h9m10 0h2M-21 29h42"/></g>
+<circle cx="502" cy="185" r="70"/><g transform="translate(502 185)"><path d="M-27-35h39l15 15v55h-54Zm39 0v15h15M-14-6h28M-14 8h28M-13 23l8 8 18-19"/></g>
+<circle cx="794" cy="185" r="70"/><g transform="translate(794 185)"><path d="M0-36v70M-34 34h68M-31-21h62M-24-21l-15 32h30ZM24-21 9 11h30Z"/><circle cy="-21" r="5"/></g>
+</g><g fill="#173e56" font-family="Arial,Helvetica,sans-serif" font-size="16" text-anchor="middle"><text x="210" y="292">Financial data</text><text x="502" y="292">Policy eligibility</text><text x="794" y="292">Valuation</text></g>
+<text x="502" y="344" fill="#606b72" font-family="Arial,Helvetica,sans-serif" font-size="12" letter-spacing="2" text-anchor="middle">COMPANY PERFORMANCE · POLICY CONTEXT</text>
+</svg>
