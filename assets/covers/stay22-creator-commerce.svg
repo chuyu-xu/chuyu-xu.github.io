@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1005" height="410" viewBox="0 0 1005 410" role="img" aria-labelledby="title desc">
-<title id="title">From a hotel brief to a measurable creator campaign</title><desc id="desc">Three connected stages: hotel, creator partnership, and validated booking.</desc>
+<title id="title">Stay22 bridges hotels and creators</title><desc id="desc">A proposed model with Stay22 at the center, providing MCN-like partnership matching and coordination between hotels and creators. Two-way arrows represent collaboration.</desc>
 <rect width="1005" height="410" fill="#f3f6f9"/>
 <g fill="none" stroke="#173e56" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-<path d="M284 185h125m-10-7 10 7-10 7M592 185h125m-10-7 10 7-10 7" stroke="#9bafb9"/>
-<rect x="140" y="115" width="140" height="140" rx="70"/><path d="M177 218v-69h66v69m-77 0h88m-47 0v-25h18v25M190 164h8m20 0h8m-36 15h8m20 0h8"/>
-<rect x="432" y="115" width="140" height="140" rx="70"/><g transform="translate(12 -4)"><circle cx="490" cy="163" r="15"/><path d="M463 207c1-27 53-27 54 0m-45 7h37"/></g>
-<rect x="724" y="115" width="140" height="140" rx="70"/><rect x="767" y="149" width="55" height="69" rx="3"/><path d="M781 149v-7h27v7m-28 37 11 11 18-23M780 162h28"/>
-</g><g fill="#173e56" font-family="Arial,Helvetica,sans-serif" font-size="16" text-anchor="middle"><text x="210" y="292">Hotel brief</text><text x="502" y="292">Creator partnership</text><text x="794" y="292">Validated outcome</text></g>
-<text x="502" y="344" fill="#606b72" font-family="Arial,Helvetica,sans-serif" font-size="12" letter-spacing="2" text-anchor="middle">PROPOSED CREATOR COMMERCE JOURNEY</text></svg>
+<path d="M284 185h125m-10-7 10 7-10 7M294 178l-10 7 10 7M592 185h125m-10-7 10 7-10 7M602 178l-10 7 10 7" stroke="#9bafb9"/>
+<circle cx="210" cy="185" r="70"/><path d="M177 218v-69h66v69m-77 0h88m-47 0v-25h18v25M190 164h8m20 0h8m-36 15h8m20 0h8"/>
+<circle cx="502" cy="185" r="70"/><path d="M466 207v-28q36-42 72 0v28M466 185h72M478 168v39M490 162v45M502 159v48M514 162v45M526 168v39M460 207h84"/>
+<circle cx="794" cy="185" r="70"/><circle cx="794" cy="159" r="15"/><path d="M767 203c1-27 53-27 54 0m-45 7h37"/>
+</g><g fill="#173e56" font-family="Arial,Helvetica,sans-serif" font-size="16" text-anchor="middle"><text x="210" y="292">Hotel</text><text x="502" y="292">Stay22</text><text x="794" y="292">Creator</text></g>
+<text x="502" y="320" fill="#606b72" font-family="Arial,Helvetica,sans-serif" font-size="13" text-anchor="middle">Partnership matching &amp; coordination</text>
+<text x="502" y="358" fill="#606b72" font-family="Arial,Helvetica,sans-serif" font-size="12" letter-spacing="2" text-anchor="middle">PROPOSED HOTEL–CREATOR PARTNERSHIP MODEL</text></svg>
