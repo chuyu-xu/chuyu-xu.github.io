@@ -1,6 +1,6 @@
 # Stay22 Creator Commerce
 
-**Retail Innovation Challenge 2026 · Team RICE · McGill University (Desautels) · Semi-finalist**
+**Retail Innovation Challenge · October 2026 · Team RICE · McGill University (Desautels) · Semi-finalist**
 
 [Read the portfolio case study](https://chuyu-xu.github.io/projects/stay22-creator-commerce/)
 
@@ -10,7 +10,7 @@ Our team explored how Stay22 could create additional commercial value from its e
 
 The proposed journey runs from a hotel's campaign brief through creator matching, sponsored content, booking handoff, and validated-stay reporting. The commercial model combines a campaign service fee with contracted performance fees. Campaign operations and booking verification would require development or integration.
 
-## My contributions
+## My Contributions
 
 I was one of the key contributors to the original business idea, developed collaboratively with Team RICE. My work connected solution design with a practical implementation strategy.
 
