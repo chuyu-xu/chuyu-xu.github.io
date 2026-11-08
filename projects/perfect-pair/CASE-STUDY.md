@@ -140,7 +140,7 @@ Recurring fit evidence becomes a product-page draft for merchandiser approval; b
 
 ## Business analysis
 
-Our team used real ALDO data provided for the competition to investigate return patterns and estimate the potential value of converting suitable refunds into exchanges. I contributed to the business-value analysis and solution discussions. The team combined this business case with an agentic return workflow and completed AWS integration for the competition.
+Our team used real ALDO data provided for the competition to investigate return patterns and estimate the potential value of converting suitable refunds into exchanges. As Business Value and Finance Lead, I led the value model, option-scoring math, margin assumptions and success metrics. The team combined this business case with an agentic return workflow and completed AWS integration for the competition.
 
 ### 1. Find the opportunity
 

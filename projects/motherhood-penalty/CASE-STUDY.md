@@ -6,7 +6,7 @@ Research case study · Queen’s University · Canada & United States · 2011–
 
 How is motherhood associated with employment and wages in Canada and the United States? This undergraduate research compares labour-market outcomes across two countries with different parental-leave and childcare policy environments.
 
-The central question goes beyond how much working mothers earn: differences in employment also shape whose wages are observed. Examining both outcomes provides a fuller view of the motherhood penalty.
+The central question goes beyond how much working mothers earn: differences in employment also shape whose wages are observed. Examining both outcomes gives a fuller view of the employment and pay differences between mothers and women without children (often called the “motherhood penalty”).
 
 ## Data & methods
 
@@ -32,6 +32,8 @@ The Canadian exit analysis also finds a positive association between motherhood 
 ## My contribution
 
 - Downloaded and combined cross-country survey data, including selecting March observations for the Canadian sample.
+- Checked the March-only restriction before adopting it: key employment and wage models estimated on full-year and March-only Canadian files gave largely consistent results.
+- Built harmonized analysis samples of women aged 25–59 (960,258 observations in the pooled employment model: 405,067 for Canada and 555,191 for the U.S.).
 - Processed household and demographic variables and used Stata to estimate models and export regression tables.
 - Interpreted employment, wage and exit results alongside the literature and independently wrote the complete paper.
 

@@ -140,7 +140,7 @@ Recurring fit evidence becomes a product-page draft for merchandiser approval; b
 
 ## Business analysis
 
-Our team used real ALDO data provided for the competition to investigate return patterns and estimate the potential value of converting suitable refunds into exchanges. I contributed to the business-value analysis and solution discussions. The team combined this business case with an agentic return workflow and completed AWS integration for the competition.
+Our team used real ALDO data provided for the competition to investigate return patterns and estimate the potential value of converting suitable refunds into exchanges. As Business Value and Finance Lead, I led the value model, option-scoring math, margin assumptions and success metrics. The team combined this business case with an agentic return workflow and completed AWS integration for the competition.
 
 ### 1. Find the opportunity
 
@@ -193,7 +193,7 @@ This repository preview is a static case-study presentation, not the original pr
 - Final presentation: slides 2–3 support the return-pattern analysis; slides 4, 6 and 13 describe oversight; slide 5 selects the business metrics and value scenarios; slide 11 describes option economics and estimated satisfaction; slide 12 describes drop-off/resale routing; slide 14 describes photo-grade calibration using synthetic pilot history. Slide 7's retail rollout is proposed. AWS integration is separately confirmed by the project participant; individual listed AWS services should not be interpreted as independently verified deployment components.
 - Early HTML: `scriptedInvestigate` and captured runs establish Maya, Priya and Jordan; `scoreOptions` establishes option economics; `routeScores`, `bestDropOffStore`, `gradeAtCounter`, `inspectionRule` and `decideCounter` establish recovery and settlement gates. `scriptedPrevention` establishes page-fix drafts, merchandiser approval and quality tickets. Physical-versus-photo grading is logged; automatic photo-confidence recalibration is described in the final presentation and is not presented as a verified early-HTML feature.
 - Stage-specific wording: early Jordan is sent to a Supervisor. The final pitch describes store-manager responsibility for suspected abuse and exceptions. Priya is arrival damage, not the final pitch's Elena manufacturing-defect scenario. The case does not merge these customers or imply every branch was executed.
-- Phase 1: background for resolution/prevention design, initial scenario methodology and proposed pilot. Its original roles are not evidence of exclusive personal authorship. Confirmed personal contribution remains participation in business-value analysis and solution discussions.
+- Phase 1: background for resolution/prevention design, initial scenario methodology and proposed pilot. Its original roles are not evidence of exclusive personal authorship. Confirmed personal role: Business Value and Finance Lead, responsible for the value model, option-scoring math, margin assumptions and metrics.
 
 ### What is shown and what is estimated
 

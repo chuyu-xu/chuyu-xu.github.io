@@ -39,4 +39,4 @@ This qualitative portfolio account excludes confidential figures, internal case 
 
 - `index.html` — case study and contribution narrative
 - `stay22.css` — page-specific styling using the portfolio's existing design
-- `../../assets/covers/stay22-creator-commerce.svg` — conceptual journey diagram
+- `../../assets/covers/stay22-cover.svg` — project cover (hotel and creator connected through Stay22)
